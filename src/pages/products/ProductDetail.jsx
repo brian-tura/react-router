@@ -5,7 +5,6 @@ import axios from 'axios';
 const ProductDetail = () => {
 
     const { id } = useParams();
-    console.log(id)
 
     const [product, setProduct] = useState({})
 
@@ -24,8 +23,8 @@ const ProductDetail = () => {
 
     return (
         <div className='container'>
-            <div className="row">
-                <h1>
+            <div className="row align-items-center flex-column">
+                <h1 className='col-5'>
                     Dettagli prodotto
                 </h1>
                 <div className='card col-5'>
