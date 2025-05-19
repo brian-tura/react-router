@@ -20,9 +20,9 @@ const ProductList = () => {
     return (
         <div className='container'>
             <div className='row'>
-                {products.map((product, index) => {
+                {products.map((product) => {
                     return (
-                    <ProductCard image={product.image} index={index} title={product.title} price={product.price}/>
+                    <ProductCard image={product.image} index={product.id} title={product.title} price={product.price}/>
                 )
                 })}
 
